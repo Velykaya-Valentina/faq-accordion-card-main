@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+button:active,
+button:focus {
+  outline: none !important;
+}
+body {
+  height: 100%;
+  font-family: 'Kumbh Sans', sans-serif;
+  background: linear-gradient(
+      180deg,
+      hsl(273, 75%, 66%) 0%,
+      hsl(240, 73%, 65%) 100%
+    )
+    no-repeat;
+  /* hidden отключен, чтобы была возможность прокручивать страницу при открытых вопросах */
+  /* overflow: hidden; */
+}
+.container {
+  background: white;
+  border: 1px solid white;
+  border-radius: 25px;
+  max-width: 400px;
+  min-width: 300px;
+  margin: 150px auto 50px;
+  color: rgb(134, 134, 134);
+  /* position: relative; */
+}
+.basic {
+  height: 100px;
+  width: 100%;
+  position: relative;
+}
+img {
+  width: 70%;
+  margin: 0 auto;
+  transform: translateY(-130px);
+  /* фильтр для прозрачніх картинок через фильтр */
+  filter: drop-shadow(0 30px 5px rgba(0, 0, 0, 0.15));
+  position: absolute;
+  left: 14%;
+  top: 2%;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  letter-spacing: 1.3px;
+  color: black;
+}
+.list__items {
+  padding: 10px 20px 60px;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .question::after {
+  content: '';
+  cursor: pointer;
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-bottom: 2px solid red;
+  border-left: 2px solid red;
+  transform: rotate(-45deg);
+} */
+.list__item.active > p > .btn {
+  transform: rotate(270deg);
+}
+.btn {
+  /* display: inline-block; */
+  font-size: 16px;
+  font-weight: 900;
+  padding: 8px;
+  background: transparent;
+  border: none;
+  color: brown;
+  outline: none;
+  transform: rotate(90deg);
+}
+.btn:focus-within {
+  background-color: yellow;
+}
+
+.list__item.active > .question {
+  font-weight: bold;
+  color: black;
+}
+.list__item.active > .answer {
+  display: block;
+  margin-top: 20px;
+}
+
+.answer {
+  display: none;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.test {
+  padding: 50px;
+  background: #ccc;
+}
