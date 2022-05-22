@@ -1,6 +1,6 @@
 # Frontend Mentor - FAQ accordion card
 
-## \*This page is testing job.
+## \**This project is test example
 
 ![Design preview for the FAQ accordion card coding challenge](./design/desktop-preview.jpg)
 
